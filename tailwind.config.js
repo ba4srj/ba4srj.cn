@@ -1,0 +1,16 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: [
+        "./docs/**/*.{vue, js, ts, md}",
+        "./docs/.vuepress/**/*.{vue, js, ts, jsx, tsx}",
+    ],
+    corePlugins: {
+        // 禁用 Tailwind 的全局样式重置
+        preflight: false,
+    },
+    theme: {
+        extend: {},
+    },
+    plugins: [],
+    darkMode: ['class', '[data-theme="dark"]'],
+};
